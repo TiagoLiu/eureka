@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Complete Travel Website Html Css</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!--header--->
+    <header>
+        <a href="#" class="logo">Eureka</a>
+        <div class="bx bx-menu" id="menu-icon"> </div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#destination">Iates</a></li>
+            <li><a href="#contact">Contacte-nos</a></li>
+        </ul>
+    </header>
+
+    <!--Home section--->
+    <section class="home" id="home">
+        <div>
+            <video autoplay muted loop>
+                <source src="img/Background.mp4">
+            </video> 
+            <div class="home-text">
+                <h1>Eureka Traveling <br> Best Sensation</h1>
+                <p>Eureka Turismo: Transformando Viagens <br> em Aventuras Memoráveis!</p>
+            </div>
+        </div>
+    </section>
+
+    <!--conteiner--->
+    <section class="container" id="servicos">
+        <div class="text">
+            <h2>Começa as tuas férias <br> com os nossos maravilhosos serviços</h2>
+        </div>
+
+        <div class="row-items">
+            <div class="container-box" onclick="openModal()">
+                <div class="container-img">
+                    <img src="img/icon1.png">
+                </div>
+                <h4>Tour</h4>
+            </div>
+
+            <div class="modal-container">
+                <div class="modal">
+                    <h2>info</h2>
+                    <hr>
+                    <span><h3>Tour e preço do iate:</h3>
+                        Queres Conhecer Belém? Temos para ti 2 tipos de tour que vai se tornar numa experiência inesquecível
+                        <br>
+                        1 hora: Torre de Belém - Monumento Náutico - Museu Maat - Ponte 425 - Estátua de Jesus - Retorno
+                        <br>
+                        2 horas: Torre de Belém - Monumento Náutico - Museu Maat - Ponte 425 - Praça Comercial - cacilhas - Estátua de Jesus - Retorno 
+                        <br>
+                        </span>
+                        <p>Contacte-nos no caso de interesse</p>
+                    <hr>
+                    <div class="btns">
+                        <button class="btnOK" onclick="closeModal()">OK</button>
+                        <button class="btnClose" onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-box" onclick="openModal2()">
+                <div class="container-img">
+                    <img src="img/icon2.png">
+                </div>
+                <h4>Alojamento</h4>
+            </div>
+
+            <div class="modal-container2">
+                <div class="modal">
+                    <h2>info</h2>
+                    <hr>
+                    <span><h3>Alojamento a bordo</h3>
+                         Nós temos serviços de alujamento a bordo, que por noite são fornecidas 2 garrafas de água e 2 chávenas de café solúvel
+                    </span>
+                        <p>Contacte-nos no caso de interesse</p>
+                    <hr>
+                    <div class="btns">
+                        <button class="btnOK" onclick="closeModal2()">OK</button>
+                        <button class="btnClose" onclick="closeModal2()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-box" onclick="openModal3()">
+                <div class="container-img">
+                    <img src="img/icon3.png">
+                </div>
+                <h4>Alugamento de pranchas de paddle</h4>
+            </div>
+
+            <div class="modal-container3">
+                <div class="modal">
+                    <h2>info</h2>
+                    <hr>
+                    <span><h3>Prancha de paddle</h3>
+                        São 3 horas para ir ao mar, e até podem experimentar pranchas de paddle!
+                    </span>
+                        <p>Contacte-nos no caso de interesse</p>
+                    <hr>
+                    <div class="btns">
+                        <button class="btnOK" onclick="closeModal3()">OK</button>
+                        <button class="btnClose" onclick="closeModal3()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+
+        <div class="row-items">
+            <div class="container-box" onclick="openModal4()">
+                <div class="container-img">
+                    <img src="img/icon1.png">
+                </div>
+                <h4>Serviços de Fotos e Vídeos</h4>
+            </div>
+
+            <div class="modal-container4">
+                <div class="modal">
+                    <h2>info</h2>
+                    <hr>
+                    <span><h3>fotografias</h3>
+                        Tiramos várias fotografias durante a viagem, você pode fazer upload de todos os negativos no Baidu Netdisk e editar 9 fotos.
+                        Você pode fornecer um pequeno vídeo de cerca de 15 segundos
+                    </span>
+                        <p>Contacte-nos no caso de interesse</p>
+                    <hr>
+                    <div class="btns">
+                        <button class="btnOK" onclick="closeModal4()">OK</button>
+                        <button class="btnClose" onclick="closeModal4()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-box" onclick="openModal5()">
+                <div class="container-img">
+                    <img src="img/icon2.png">
+                </div>
+                <h4>Serviços de Pesca</h4>
+            </div>
+
+            <div class="modal-container5">
+                <div class="modal">
+                    <h2>info</h2>
+                    <hr>
+                    <span><h3>Há também pesca 🎣</h3>
+                        Alogamento de iates para a pesca, fornece comida de peixe e vara de pescar, 
+                        além de bilhetes de pesca de 5 euros por pessoa, o passeio de barco é uma viagem de 3 horas até o ponto de pesca, 
+                        mais 5 euros pelo bilhete de pesca de cada pessoa. As espécies pesqueiras incluem: peixe-arroz, dourada (águia negra), garoupa pequena, corvina, 
+                        sagro, rininha, etc.</span>
+                        <p>Contacte-nos no caso de interesse</p>
+                    <hr>
+                    <div class="btns">
+                        <button class="btnOK" onclick="closeModal5()">OK</button>
+                        <button class="btnClose" onclick="closeModal5()">Close</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-box" onclick="openModal6()">
+                <div class="container-img">
+                    <img src="img/icon3.png">
+                </div>
+                <h4>Regras</h4>
+            </div>
+
+            <div class="modal-container6">
+                <div class="modal">
+                    <h2>info</h2>
+                    <hr>
+                    <span><h3>Coisas para prestar atenção</h3>
+                        1. Aplique protetor solar <br>
+                        2. Use óculos escuros e um casaco fino <br>
+                        3. Tenha cuidado para não usar chapéu sem corda (a corda porde-se arrebentar) <br>
+                        4. Preste atenção à sua própria segurança e à segurança de sua propriedade <br>
+                        5. Você pode trazer lanches (Excepto com odores fortes) <br>
+                        6. Preste atenção ao sofá e à almofada dianteira do barco. Por favor, não danifique. <br>
+                        Se houver algum dano, você será compensado de acordo com o preço. <br>
+                        7. Use sapatos antiderrapantes, é melhor não usar salto alto <br>
+                        8. Não fumar na cabine do barco</span>
+                        <p>Contacte-nos no caso de interesse</p>
+                    <hr>
+                    <div class="btns">
+                        <button class="btnOK" onclick="closeModal6()">OK</button>
+                        <button class="btnClose" onclick="closeModal6()">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--destination section---> 
+    <section class="destination" id="destination">
+        <div class="title">
+
+        <h2>Nossos <br> Iates</h2>
+    </div>
+
+    <div class="destination-content">
+        <div class="col-content">
+            <img src="img/Image_20230823151213.jpg">
+        </div>
+
+        <div class="col-content">
+            <img src="img//Image_20230823154733.jpg">
+        </div>
+
+        <div class="col-content">
+            <img src="img/Image_20230823154816.jpg">
+        </div>
+
+        <div class="col-content">
+            <img src="img/Image_20230823154807.jpg">
+        </div>
+
+        <div class="col-content">
+            <img src="img/Image_20230823154849.jpg">
+        </div>
+
+        <div class="col-content">
+            <img src="img//Image_20230823154859.jpg">
+        </div>
+
+    </div>
+    </section>
+
+    <!--footer--->
+    <section id="contact">
+        <div class="footer">
+            <div class="main">
+                <div class="list">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#" onclick="openModal8()">Terms conditions</a></li>
+
+                        <div class="modal-container8">
+                            <div class="modal">
+                                <h2>Contactos</h2>
+                                <hr>
+                                <span><h2>Terms conditions & Privacy Policy</h2>
+                                    <hr>
+                                    Terms and conditions
+                                    <br>
+                                   
+                                    1. Acceptance of Terms and Conditions
+                                    <br>
+                                    By accessing or using this website, you agree to comply with and be bound by these terms and conditions. If you do not agree with any of the terms, do not use the site.
+                                    <br>
+                                
+                                    2. Use of Content
+                                    All content on this site is the exclusive property of Eureka and is protected by copyright laws. You agree not to reproduce, distribute or use any content on this site without the express permission of Eureka.
+                                    <br>
+                                    
+                                    3. User Information
+                                    By using this site, you agree to provide accurate and updated information when necessary. Eureka may collect and use information as described in our Privacy Policy.
+                                    <br>
+                                   
+                                    4. User Responsibility
+                                    You agree not to use this site for illegal, harmful, defamatory or offensive activities. You are responsible for all information you provide and your activities on the website.
+                                    <br>
+                                   
+                                    5. Links to Third Parties
+                                    This website may contain links to third party websites. Eureka is not responsible for the content or privacy practices of these sites. The inclusion of links does not imply endorsement or affiliation.
+                                </p></span>
+                                <hr>
+                                <div class="btns">
+                                    <button class="btnOK" onclick="closeModal8()">OK</button>
+                                    <button class="btnClose" onclick="closeModal8()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <li><a href="#" onclick="openModal9()">Privacy Policy</a></li>
+
+                        <div class="modal-container9">
+                            <div class="modal">
+                                Privacy Policy
+                                <br>
+                                1. Collection of Personal Information
+                                We collect information such as name, email and contact details only when necessary to provide our services.
+                                <br>
+                                
+                                2. Use of Personal Information
+                                We use your information to process orders, provide support and send relevant communications (with consent).
+                                <br>
+                                
+                                3. Information Sharing
+                                We do not share your personal information with third parties except to comply with legal obligations.
+                                <br>
+                                
+                                4. Data Security
+                                We implement security measures to protect your information against unauthorized access.
+                                
+                                <br>
+                                5. Changes to the Privacy Policy
+                                We will update this policy as necessary and post changes on the website.</span>
+                                <hr>
+                                <div class="btns">
+                                    <button class="btnOK" onclick="closeModal9()">OK</button>
+                                    <button class="btnClose" onclick="closeModal9()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Contactos</h4>
+                    <ul>
+                        <li><a href="https://maps.app.goo.gl/pKRPax6VUYjFob1GA" target="_blank">Local</a></li>
+                        <li><a href="#" onclick="openModal7()">Contactos</a></li>
+
+                        <div class="modal-container7">
+                            <div class="modal">
+                                <h2>Contactos</h2>
+                                <hr>
+                                <span><p>E-mail - 694787490@qq.com <br>
+                                Telemóvel - +351 928031002 <br>
+                                Wechat <br>
+                                <img src="/img/wechat.jpg" class="img">
+                                </p></span>
+                                <hr>
+                                <div class="btns">
+                                    <button class="btnOK" onclick="closeModal7()">OK</button>
+                                    <button class="btnClose" onclick="closeModal7()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="list">
+                    <h4>Social Media</h4>
+                    <div class="social">
+                        <a href="#"><i class='bx bxl-facebook' ></i></a>
+                        <a href="https://www.instagram.com/eurekalisboa/" target="_blank"><i class='bx bxl-instagram' ></i></a>
+                    </div>
+                </div>
+
+
+
+
+
+            </div>
+        </div>
+    
+        <div class="end-text">
+            <p>Copyright ©2023 All rights reserved | Made by Gomes & Liu</p>
+
+        </div>
+
+
+
+    </section>
+
+    <!--link to js--->
+    <script type="text/javascript" src="js/script.js" ></script>
+
+</body>
+</html>
